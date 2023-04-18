@@ -12,4 +12,4 @@ mongoose.connect(MONGODB_URI)
     .then((result) => {
         console.log("Connected to the database successfully");
     })
-   
+    .catch(err => {err.message})
